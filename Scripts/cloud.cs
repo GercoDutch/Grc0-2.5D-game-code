@@ -8,7 +8,7 @@ public class cloud : MonoBehaviour
     public LayerMask mask;
     private Coroutine routine;
 
-    public IEnumerator BegoneThot()
+    public IEnumerator Begone()
     {
         yield return new WaitForSeconds(getal);
         GetComponent<MeshRenderer>().enabled = false;
@@ -32,7 +32,7 @@ public class cloud : MonoBehaviour
 
             Debug.Log(2);
 
-            routine = StartCoroutine("BegoneThot");
+            routine = StartCoroutine("Begone");
         }
     }
 }
