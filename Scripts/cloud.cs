@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class cloud : MonoBehaviour
 {
-    public float getal;
+    public float number;
     public LayerMask mask;
     private Coroutine routine;
 
     public IEnumerator Begone()
     {
-        yield return new WaitForSeconds(getal);
+        yield return new WaitForSeconds(number);
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
 
-        yield return new WaitForSeconds(getal);
+        yield return new WaitForSeconds(number);
         GetComponent<MeshRenderer>().enabled = true;
         GetComponent<BoxCollider>().enabled = true;
 
